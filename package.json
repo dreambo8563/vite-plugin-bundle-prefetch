@@ -1,0 +1,38 @@
+{
+  "name": "vite-plugin-bundle-prefetch",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/vite-plugin-bundle-prefetch.js",
+  "types": "dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "vite-plugin",
+    "prefetch"
+  ],
+  "description": "A vite plugin for prefetching resources",
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/vite-plugin-bundle-prefetch.js",
+      "require": "./dist/vite-plugin-bundle-prefetch.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --p ./tsconfig-build.json && vite build",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "vite": "^5.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.3",
+    "typescript": "^5.2.2",
+    "unbuild": "^2.0.0",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.7.1"
+  }
+}
