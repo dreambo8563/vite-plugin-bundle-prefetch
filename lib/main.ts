@@ -7,7 +7,7 @@ export interface IPrefetchPluginOption {
 const prefetchPlugin: (option?: IPrefetchPluginOption) => Plugin = (option) => {
   let config: ResolvedConfig;
   return {
-    name: 'vite-plugin-prefetch',
+    name: 'vite-plugin-bundle-prefetch',
     apply: 'build',
     configResolved(resolvedConfig: ResolvedConfig) {
       // store the resolved config
