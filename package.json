@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-bundle-prefetch",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "dreambo8563",
   "type": "module",
   "main": "dist/vite-plugin-bundle-prefetch.js",
